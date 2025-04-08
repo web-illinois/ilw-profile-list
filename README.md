@@ -6,23 +6,35 @@ Links: **[ilw-profile-list in Builder](https://builder3.toolkit.illinois.edu/com
 
 ## Overview
 
-A 1-3 paragraph explanation of what the component does and how it presents.
+The profile list is a compact version of the profile, used in the directory component. 
+
+The image slot and subtitle slot are optional. The name slot is required. 
+
+If you use the circle image, make sure your image has the same height and width. If your image is portrait view, then you should not use the `circle` attribute. 
+
+### Attributes
+
+* `circle`: This will change the image to a circle.
 
 ## Code Examples
 
 ```html
-<ilw-profile-list></ilw-profile-list>
+<ilw-profile-list>
+    <img slot="image" href="/img/profile.webp" alt="Jane Smith">
+    <a slot="name">Smith, Jane</a>
+    <div slot="subtitle">Department of Redundancy Department</div>
+    <div>jsmith@illinois.edu | (217) 123-4567</div>
+</ilw-profile-list>
 ```
 
 ## Accessibility Notes and Use
 
-Consider accessibility, both for building the component and for its use:
+This is using the standard font / background contrast, so color contrast shouldn't be an issue. 
 
-- Is there sufficient color contrast?
-- Can the component be fully understood without colors?
-- Does the component need alt text or ARIA roles?
-- Can the component be navigated with a keyboard? Is the tab order correct?
-- Are focusable elements interactive, and interactive elements focusable?
-- Are form fields, figures, fieldsets and other interactive elements labelled?
+Make sure you add a proper alt text for the image. Do not include "portrait of" or "picture of" because screen readers will recognize that this is an image. When possible, allow users to enter in their own alt text because people identifying how they want to be described is essential to self-image. 
+
+Because this is most likely used to list people, please add these in an unordered list. 
 
 ## External References
+
+None

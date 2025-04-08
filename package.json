@@ -1,10 +1,10 @@
 {
     "name": "@illinois-toolkit/ilw-profile-list",
-    "description": "One paragraph description of the component.",
+    "description": "The profile list is a compact version of the profile, used in the directory component. ",
     "repository": "github:web-illinois/ilw-profile-list",
     "private": false,
     "license": "MIT",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "type": "module",
     "files": [
         "src/**",

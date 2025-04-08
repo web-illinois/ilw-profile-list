@@ -4,11 +4,11 @@
     "github": "https://github.com/web-illinois/ilw-profile-list/",
     "type": "web component",
     "element-name": "ilw-profile-list",
-    "description": "Description for builder.",
-    "version": "1.0.0-alpha",
-    "date": "04/04/2025",
-    "css": "https://dev.toolkit.illinois.edu/ilw-profile-list/1.0.0-alpha/ilw-profile-list.css",
-    "js": "https://dev.toolkit.illinois.edu/ilw-profile-list/1.0.0-alpha/ilw-profile-list.js",
+    "description": "A compact version of the profile.",
+    "version": "1.0.0",
+    "date": "04/08/2025",
+    "css": "https://cdn.toolkit.illinois.edu/ilw-profile-list/1.0.0/ilw-profile-list.css",
+    "js": "https://cdn.toolkit.illinois.edu/ilw-profile-list/1.0.0/ilw-profile-list.js",
     "production": false,
     "notes": "",
     "parent-style": "",
@@ -16,24 +16,22 @@
         {
             "name": "default",
             "description": "Default information",
-            "text": "<p>Lorem ipsum</p>"
+            "text": "<img slot='image' href='https://picsum.photos/200' alt='Jane Smith'><a slot='name'>Smith, Jane</a><div slot='subtitle'>Department of Redundancy Department</div><div>jsmith@illinois.edu | (217) 123-4567</div>"
         }
     ],
     "attributes-fixed": [],
     "attributes-text": [],
     "attributes": [
         {
-            "name": "theme",
-            "description": "Color theme used",
+            "name": "circle",
+            "description": "If the image uses a circle shape.",
             "depreciated": false,
             "values": [
                 "",
-                "blue",
-                "orange",
-                "white"
+                "circle"
             ]
         }
-    ],
+],
     "classes-fixed": [],
     "classes": [],
     "css-variables": [

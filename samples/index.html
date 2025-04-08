@@ -6,12 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profile List Component</title>
     <link rel="stylesheet" href="https://cdn.brand.illinois.edu/illinois.css">
-    <link rel="stylesheet" href="https://dev.toolkit.illinois.edu/ilw-global/3.0.0-alpha/ilw-global.css">
+    <link rel="stylesheet" href="https://toolkit.illinois.edu/ilw-global/3/ilw-global.css">
     <script type="module" src="/src/ilw-profile-list.js"></script>
 </head>
 
 <body style="margin: 0; padding: 0;">
-<ilw-profile-list></ilw-profile-list>
+    <ilw-profile-list>
+        <img slot="image" href="profile.webp" alt="Jane Smith">
+        <a slot="name">Smith, Jane</a>
+        <div slot="subtitle">Department of Redundancy Department</div>
+        <div>jsmith@illinois.edu | (217) 123-4567</div>
+    </ilw-profile-list>
 </body>
 
 </html>

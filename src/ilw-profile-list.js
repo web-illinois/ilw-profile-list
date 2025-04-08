@@ -21,8 +21,11 @@ class ProfileList extends LitElement {
 
     render() {
         return html`
-            <div>
-                <slot></slot>
+            <div class="container">
+                <div><slot name="image"></slot></div>
+                <div><slot name="name"></slot></div>
+                <div><slot name="subtitle"></slot></div>
+                <div><slot></slot></div>
             </div>
         `;
     }

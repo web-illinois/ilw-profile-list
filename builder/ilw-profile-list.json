@@ -4,9 +4,9 @@
     "github": "https://github.com/web-illinois/ilw-profile-list/",
     "type": "web component",
     "element-name": "ilw-profile-list",
-    "description": "Description for builder.",
-    "purpose": "Imperative mood purpose for builder homepage.",
+    "description": "A compact version of the profile",
+    "purpose": "Build a profile",
     "toolkit-version": "",
-    "production-version": "",
-    "development-version": "1.0.0-alpha"
+    "production-version": "1.0.0",
+    "development-version": "1.0.0"
 }
