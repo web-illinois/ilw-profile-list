@@ -9,18 +9,25 @@
     "date": "04/08/2025",
     "css": "https://cdn.toolkit.illinois.edu/ilw-profile-list/1.0.0/ilw-profile-list.css",
     "js": "https://cdn.toolkit.illinois.edu/ilw-profile-list/1.0.0/ilw-profile-list.js",
-    "production": false,
+    "production": true,
     "notes": "",
     "parent-style": "",
     "samples": [
         {
             "name": "default",
             "description": "Default information",
-            "text": "<img slot='image' href='https://picsum.photos/200' alt='Jane Smith'><a slot='name'>Smith, Jane</a><div slot='subtitle'>Department of Redundancy Department</div><div>jsmith@illinois.edu | (217) 123-4567</div>"
+            "text": "<img slot='image' src='https://picsum.photos/200' alt='Jane Smith'><a href='#' slot='name'>Smith, Jane</a><div slot='subtitle'>Department of Redundancy Department</div><div><a href='#'>jsmith@illinois.edu</a> | <a href='#'>(217) 123-4567</a></div>"
         }
     ],
     "attributes-fixed": [],
-    "attributes-text": [],
+    "attributes-text": [
+        {
+            "name": "padding",
+            "description": "Padding around the control, in CSS units.",
+            "depreciated": false,
+            "value": ""
+        }
+    ],
     "attributes": [
         {
             "name": "circle",
@@ -31,9 +38,19 @@
                 "circle"
             ]
         }
-],
+    ],
     "classes-fixed": [],
     "classes": [],
     "css-variables": [
+        {
+            "name": "--ilw-profile-list--height",
+            "description": "Expected height of the container, defaults to initial.",
+            "depreciated": false
+        },
+        {
+            "name": "--ilw-profile-list--image-width",
+            "description": "Expected width of the image, defaults to 125px.",
+            "depreciated": false
+        }
     ]
 }

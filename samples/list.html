@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile List Component</title>
+    <link rel="stylesheet" href="https://cdn.brand.illinois.edu/illinois.css">
+    <link rel="stylesheet" href="https://toolkit.illinois.edu/ilw-global/3/ilw-global.css">
+    <script type="module" src="/src/ilw-profile-list.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(event) {
+          const params = new URLSearchParams(window.location.search);
+          document.querySelectorAll("ilw-profile-list").forEach(component => {
+            if (params.has('padding')) {
+              component.setAttribute('padding', params.get('padding'));
+            }
+            if (params.has('circle')) {
+              component.setAttribute('circle', 'true');
+            }
+          });
+        });
+    </script>
+</head>
+
+<body style="margin: 0; padding: 0;">
+    <ul class="ilw-profile-list-container">
+        <li>
+            <ilw-profile-list>
+                <img slot="image" src="profile.webp" alt="Jane Smith">
+                <a slot="name" href="#">Smith, Jane</a>
+                <div slot="subtitle">Department of Redundancy Department</div>
+                <div><a href="#">jsmith@illinois.edu</a> | <a href="#">(217) 123&#8209;4567</a></div>
+            </ilw-profile-list>
+        </li>
+        <li>
+            <ilw-profile-list>
+                <img slot="image" src="profile.webp" alt="Jane Smith">
+                <a slot="name" href="#">Smith, Jane</a>
+                <div slot="subtitle">Department of Redundancy Department</div>
+                <div><a href="#">jsmith@illinois.edu</a> | <a href="#">(217) 123&#8209;4567</a></div>
+            </ilw-profile-list>
+        </li>
+        <li>
+            <ilw-profile-list>
+                <img slot="image" src="profile.webp" alt="Jane Smith">
+                <a slot="name" href="#">Smith, Jane</a>
+                <div slot="subtitle">Department of Redundancy Department</div>
+                <div><a href="#">jsmith@illinois.edu</a> | <a href="#">(217) 123&#8209;4567</a></div>
+            </ilw-profile-list>
+        </li>
+        <li>
+            <ilw-profile-list>
+                <img slot="image" src="profile.webp" alt="Jane Smith">
+                <a slot="name" href="#">Smith, Jane</a>
+                <div slot="subtitle">Department of Redundancy Department</div>
+                <div><a href="#">jsmith@illinois.edu</a> | <a href="#">(217) 123-4567</a></div>
+            </ilw-profile-list>
+        </li>
+        <li>
+            <ilw-profile-list>
+                <img slot="image" src="profile.webp" alt="Jane Smith">
+                <a slot="name" href="#">Smith, Jane</a>
+                <div slot="subtitle">Department of Redundancy Department</div>
+                <div><a href="#">jsmith@illinois.edu</a> | <a href="#">(217) 123-4567</a></div>
+            </ilw-profile-list>
+        </li>
+        <li>
+            <ilw-profile-list>
+                <img slot="image" src="profile.webp" alt="Jane Smith">
+                <a slot="name" href="#">Smith, Jane</a>
+                <div slot="subtitle">Department of Redundancy Department</div>
+                <div><a href="#">jsmith@illinois.edu</a> | <a href="#">(217) 123-4567</a></div>
+            </ilw-profile-list>
+        </li>
+    </ul>
+</body>
+
+</html>

@@ -6,7 +6,8 @@ class ProfileList extends LitElement {
 
     static get properties() {
         return {
-            theme: { type: String, attribute: true }
+            padding: { type: String, attribute: true },
+            circle: { type: Boolean, attribute: true }
         };
     }
 
@@ -16,16 +17,21 @@ class ProfileList extends LitElement {
 
     constructor() {
         super();
-        this.theme = '';
+        this.circle = false;
+        this.padding = '';
+    }
+
+    get paddingStyle() {
+        return this.padding == '' ? '' : 'padding: ' + this.padding + ';';
     }
 
     render() {
         return html`
-            <div class="container">
-                <div><slot name="image"></slot></div>
-                <div><slot name="name"></slot></div>
-                <div><slot name="subtitle"></slot></div>
-                <div><slot></slot></div>
+            <div class="container" style="${this.paddingStyle}">
+                <div class="image"><slot name="image"></slot></div>
+                <div class="name"><slot name="name"></slot></div>
+                <div class="subtitle"><slot name="subtitle"></slot></div>
+                <div class="main"><slot></slot></div>
             </div>
         `;
     }

@@ -1,0 +1,48 @@
+:root {
+    --ilw-profile-list--text-color: var(--il-storm-darker-2);
+    --ilw-profile-list--link-color: var(--il-blue);
+    --ilw-profile-list--sublink-color: var(--il-industrial);
+    --ilw-profile-list--visited-color: var(--il-blue);
+    --ilw-profile-list--focused-color: var(--il-altgeld);
+    --ilw-profile-list--focused-outline: initial;
+    --ilw-profile-list--focused-background-color: initial;
+    --ilw-profile-list--focus-background-color: var(--il-arches-lighter-3);
+    --ilw-profile-list--focus-color: var(--il-blue);
+    --ilw-profile-list--focus-outline: solid var(--il-blue) 1px;
+    --ilw-profile-list--height: initial;
+    --ilw-profile-list--image-width: 125px;
+}
+
+ul.ilw-profile-list-container {
+    list-style: none;
+    padding-left: 0;
+}
+
+ilw-profile-list {
+    container-type: inline-size;
+    display: block;
+}
+
+ilw-profile-list img {
+    width: 100%;
+}
+
+ilw-profile-list[circle] img {
+    object-fit: cover;
+    border-radius: 50%;
+    height: var(--ilw-profile-list--image-width);
+}
+
+ilw-profile-list div a, ilw-profile-list div a:visited {
+    color: var(--ilw-profile-list--sublink-color);
+}
+
+ilw-profile-list a:hover, ilw-profile-list div a:hover {
+    color: var(--ilw-profile-list--focused-color);
+}
+
+ilw-profile-list a:focus, ilw-profile-list div a:focus {
+    background-color: var(--ilw-profile-list--focus-background-color);
+    color: var(--ilw-profile-list--focus-color);
+    outline: var(--ilw-profile-list--focus-outline);
+  }

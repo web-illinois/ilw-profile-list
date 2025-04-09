@@ -1,9 +1,45 @@
-/* Styleable variables are in the base layer so they can be overridden easily */
 @layer base {
-    :host {
-
-    }
 }
 
 :host {
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 1fr auto auto auto 1fr;
+    grid-template-columns: var(--ilw-profile-list--image-width) 1fr;
+    column-gap: 2rem;
+    height: var(--ilw-profile-list--height);
+}
+
+.image {
+    grid-row: 1 / span 5;
+}
+
+.name {
+    grid-row: 2;
+}
+
+.subtitle {
+    grid-row: 3;
+    padding-top: 3px;
+}
+
+.main {
+    grid-row: 4;
+}
+
+::slotted(*) {
+    font: 400 1rem/1.5rem var(--il-font-sans);
+    color: var(--ilw-profile-list--text-color);
+}
+
+.name ::slotted(*) {
+    font: 600 1.3125rem/1.75rem var(--il-font-sans);
+    color: var(--ilw-profile-list--link-color);
+}
+
+::slotted(*) a {
+    font: 600 1.3125rem/1.75rem var(--il-font-sans);
+    color: var(--ilw-link--color);
 }
