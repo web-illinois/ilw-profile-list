@@ -1,5 +1,6 @@
 import { LitElement, html, unsafeCSS } from "lit";
 import styles from './ilw-profile-list.styles.css?inline';
+import { styleMap } from 'lit/directives/style-map.js';
 import './ilw-profile-list.css';
 
 class ProfileList extends LitElement {
@@ -22,12 +23,14 @@ class ProfileList extends LitElement {
     }
 
     get paddingStyle() {
-        return this.padding == '' ? '' : 'padding: ' + this.padding + ';';
+        return this.padding == '' ? {} : {
+            padding: this.padding
+        };
     }
 
     render() {
         return html`
-            <div class="container" style="${this.paddingStyle}">
+            <div class="container" style="${styleMap(this.paddingStyle)}">
                 <div class="image"><slot name="image"></slot></div>
                 <div class="name"><slot name="name"></slot></div>
                 <div class="subtitle"><slot name="subtitle"></slot></div>
