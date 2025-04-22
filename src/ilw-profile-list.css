@@ -35,6 +35,7 @@ ilw-profile-list[circle] img {
 
 ilw-profile-list div a, ilw-profile-list div a:visited {
     color: var(--ilw-profile-list--sublink-color);
+    white-space: nowrap;
 }
 
 ilw-profile-list a:hover, ilw-profile-list div a:hover {
