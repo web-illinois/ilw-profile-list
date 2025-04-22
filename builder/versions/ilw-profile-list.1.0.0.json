@@ -11,7 +11,7 @@
     "js": "https://cdn.toolkit.illinois.edu/ilw-profile-list/1.0.0/ilw-profile-list.js",
     "production": true,
     "notes": "",
-    "parent-style": "",
+    "parent-style": "margin: 0 auto; max-width: 800px; padding: 15px;",
     "samples": [
         {
             "name": "default",
