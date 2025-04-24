@@ -23,8 +23,8 @@ You can use the helper class `ilw-profile-list-container` to put this in an unor
 
 ```html
 <ilw-profile-list>
-    <img slot="image" src="/img/profile.webp" alt="Jane Smith">
     <a slot="name" href="#">Smith, Jane</a>
+    <img slot="image" src="/img/profile.webp" alt="Jane Smith">
     <div slot="title">Department of Redundancy Department</div>
     <div><a href="#">jsmith@illinois.edu</a> | <a href="#">(217) 123-4567</a></div>
 </ilw-profile-list>
@@ -38,8 +38,6 @@ Make sure you add a proper alt text for the image. Do not include "portrait of" 
 
 Because this is most likely used to list people, please add these in an unordered list with the helper class `ilw-profile-list-container`. You can use the grid CSS to create grids and handle padding in between items.
 
-For the phone number, you may want to use the `&#8209;` character as a non-breaking hyphen. 
-
 ```
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, auto));
@@ -47,6 +45,9 @@ For the phone number, you may want to use the `&#8209;` character as a non-break
     row-gap: 20px;
 ```
 
+For the phone number, you may want to use the `&#8209;` character as a non-breaking hyphen. 
+
+The name is first semantically, even though visually, the picture is first. This is to ensure that screen readers read the name first before a description of the person is read. 
 
 ## External References
 

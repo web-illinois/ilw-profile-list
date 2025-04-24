@@ -31,8 +31,8 @@ class ProfileList extends LitElement {
     render() {
         return html`
             <div class="container" style="${styleMap(this.paddingStyle)}">
-                <div class="image"><slot name="image"></slot></div>
                 <div class="name"><slot name="name"></slot></div>
+                <div class="image"><slot name="image"></slot></div>
                 <div class="subtitle"><slot name="subtitle"></slot></div>
                 <div class="main"><slot></slot></div>
             </div>
