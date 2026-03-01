@@ -9,17 +9,14 @@
     <link rel="stylesheet" href="https://toolkit.illinois.edu/ilw-global/3/ilw-global.css">
     <script type="module" src="/src/ilw-profile-list.js"></script>
     <script>
-        document.addEventListener("DOMContentLoaded", function(event) {
-          const params = new URLSearchParams(window.location.search);
-          document.querySelectorAll("ilw-profile-list").forEach(component => {
-            if (params.has('padding')) {
-              component.setAttribute('padding', params.get('padding'));
-            }
-            if (params.has('circle')) {
-              component.setAttribute('circle', 'true');
-            }
+      document.addEventListener("DOMContentLoaded", function(event) {
+        const params = new URLSearchParams(window.location.search);
+        document.querySelectorAll("ilw-profile-list").forEach(component => {
+          params.forEach((value, key) => {
+              component.setAttribute(key, value);
           });
         });
+      });
     </script>
 </head>
 

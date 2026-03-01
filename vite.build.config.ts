@@ -4,17 +4,18 @@ import { defineConfig } from "vite";
 export default defineConfig({
     root: "src",
     build: {
-        outDir: "../dist",
+        outDir: "../dist/cdn",
         lib: {
             name: "ilw-profile-list",
-            entry: "ilw-profile-list.js",
+            entry: "ilw-profile-list.ts",
             fileName: "ilw-profile-list",
-            formats: ["es", "cjs", "umd"],
+            formats: ["es"],
         },
         rollupOptions: {
             output: {
                 assetFileNames: (chunkInfo) => {
                     if (chunkInfo.name === "style.css") return "ilw-profile-list.css";
+                    return "[name][extname]";
                 },
             },
         },

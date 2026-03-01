@@ -1,0 +1,57 @@
+{
+    "title": "Profile List",
+    "tag": "ilw-profile-list",
+    "github": "https://github.com/web-illinois/ilw-profile-list/",
+    "type": "web component",
+    "element-name": "ilw-profile-list",
+    "description": "A compact version of the profile.",
+    "builder-version": "1.0",
+    "version": "1.0.2",
+    "date": "04/08/2025",
+    "css": "https://cdn.toolkit.illinois.edu/ilw-profile-list/1.0/ilw-profile-list.css",
+    "js": "https://cdn.toolkit.illinois.edu/ilw-profile-list/1.0/ilw-profile-list.js",
+    "production": true,
+    "notes": "",
+    "parent-style": "margin: 0 auto; max-width: 800px; padding: 15px;",
+    "samples": [
+        {
+            "name": "default",
+            "description": "Default information",
+            "text": "<img slot='image' src='https://picsum.photos/200' alt='Jane Smith'><a href='#' slot='name'>Smith, Jane</a><div slot='subtitle'>Department of Redundancy Department</div><div><a href='#'>jsmith@illinois.edu</a> | <a href='#'>(217) 123-4567</a></div>"
+        }
+    ],
+    "attributes-fixed": [],
+    "attributes-text": [
+        {
+            "name": "padding",
+            "description": "Padding around the control, in CSS units.",
+            "depreciated": false,
+            "value": ""
+        }
+    ],
+    "attributes": [
+        {
+            "name": "circle",
+            "description": "If the image uses a circle shape.",
+            "depreciated": false,
+            "values": [
+                "",
+                "circle"
+            ]
+        }
+    ],
+    "classes-fixed": [],
+    "classes": [],
+    "css-variables": [
+        {
+            "name": "--ilw-profile-list--height",
+            "description": "Expected height of the container, defaults to initial.",
+            "depreciated": false
+        },
+        {
+            "name": "--ilw-profile-list--image-width",
+            "description": "Expected width of the image, defaults to 125px.",
+            "depreciated": false
+        }
+    ]
+}

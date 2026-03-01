@@ -1,16 +1,16 @@
 import { LitElement, html, unsafeCSS } from "lit";
+// @ts-ignore
 import styles from './ilw-profile-list.styles.css?inline';
 import { styleMap } from 'lit/directives/style-map.js';
 import './ilw-profile-list.css';
+import { customElement, property, query, state } from "lit/decorators.js";
+@customElement('ilw-profile-list')
+export default class ProfileList extends LitElement {
+    @property({ type: String }) 
+    padding: string = '';
 
-class ProfileList extends LitElement {
-
-    static get properties() {
-        return {
-            padding: { type: String, attribute: true },
-            circle: { type: Boolean, attribute: true }
-        };
-    }
+    @property({ type: Boolean }) 
+    circle: boolean = false;
 
     static get styles() {
         return unsafeCSS(styles);
@@ -40,4 +40,8 @@ class ProfileList extends LitElement {
     }
 }
 
-customElements.define('ilw-profile-list', ProfileList);
+declare global {
+interface HTMLElementTagNameMap {
+    "ilw-profile-list": ProfileList;
+  }
+}
