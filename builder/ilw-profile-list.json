@@ -1,12 +1,21 @@
 {
-    "title": "Profile List",
-    "tag": "ilw-profile-list",
-    "github": "https://github.com/web-illinois/ilw-profile-list/",
-    "type": "web component",
-    "element-name": "ilw-profile-list",
-    "description": "A compact version of the profile",
-    "purpose": "Build a profile",
-    "toolkit-version": "1.1",
-    "production-version": "1.1",
-    "development-version": "latest"
+  "title": "Profile List",
+  "id": "ilw-profile-list",
+  "type": "Web Component",
+  "repository-name": "ilw-profile-list",
+  "description": "Display people in a compact, scannable list with essential profile and contact information.",
+  "purpose": "Build a profile",
+  "customtemplates": [],
+  "versions": [
+    {
+      "name": "1.0",
+      "notes": "",
+      "template": "1.0"
+    },
+    {
+      "name": "1.1",
+      "notes": "",
+      "template": "1.0"
+    }
+  ]
 }
